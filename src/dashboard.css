@@ -1,0 +1,63 @@
+/* Global Styles - Apply to the entire page */
+body {
+    font-family: Helvetica, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  /* Dashboard Styles */
+  .dashboard {
+    display: flex; 
+    flex-direction: column; /* Arrange header and body vertically */
+    min-height: 100vh; 
+    background-color: #caf0f8; /* Primary Color */
+    color: #03045e; /* Accent 2 Color */
+  }
+  
+  .dashboard__header {
+    background-color: #3a86ff; /* Accent 1 Color */
+    padding: 1rem; /* Add padding around the title */
+    display: flex; /* For title alignment */
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .dashboard__title {
+    color: #000; /* Black Text Color */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .dashboard__body {
+    display: flex; 
+    flex: 1; /* Allow the body to take up the available space */
+  }
+  
+  .dashboard__sidebar {
+    width: 200px; 
+    padding: 1rem; 
+    border-right: 1px solid #ddd; /* Adds a light border */
+  }
+  
+  .dashboard__tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboard__tab {
+    padding: 0.5rem 1rem; /* Make tabs a bit larger */
+    margin-bottom: 1rem; 
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .dashboard__tab:hover {
+    background-color: #e0e0e0; /* Light hover effect */
+  }
+  
+  .dashboard__content { 
+    flex: 1; /* Allow content area to expand */
+    padding: 2rem; /* Add padding around content */
+  }
+  
