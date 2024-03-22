@@ -8,35 +8,37 @@ body {
   /* Dashboard Styles */
   .dashboard {
     display: flex; 
-    flex-direction: column; /* Arrange header and body vertically */
+    flex-direction: column; 
     min-height: 100vh; 
-    background-color: #caf0f8; /* Primary Color */
+    background-color: #e0e0e0; /* Primary Color */
     color: #03045e; /* Accent 2 Color */
   }
   
   .dashboard__header {
-    background-color: #3a86ff; /* Accent 1 Color */
-    padding: 1rem; /* Add padding around the title */
-    display: flex; /* For title alignment */
-    justify-content: center; 
+    background-color: #e0e0e0; /* Accent 1 Color */
+    padding: 1rem;
+    display: flex; 
+    justify-content: left; 
     align-items: center;
   }
   
   .dashboard__title {
     color: #000; /* Black Text Color */
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 2rem;
+    padding: 1rem;
     font-weight: bold;
   }
   
   .dashboard__body {
     display: flex; 
-    flex: 1; /* Allow the body to take up the available space */
+    flex: 1;
   }
   
   .dashboard__sidebar {
     width: 200px; 
-    padding: 1rem; 
-    border-right: 1px solid #ddd; /* Adds a light border */
+    padding: 2rem; 
+    border-right: 1px solid #ddd; 
   }
   
   .dashboard__tabs {
@@ -46,18 +48,62 @@ body {
   }
   
   .dashboard__tab {
-    padding: 0.5rem 1rem; /* Make tabs a bit larger */
+    padding: 0.5rem 1rem; 
     margin-bottom: 1rem; 
     cursor: pointer; 
-    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+    transition: all 0.2s ease-in-out; 
   }
   
   .dashboard__tab:hover {
-    background-color: #e0e0e0; /* Light hover effect */
+    background-color: #caf0f8; 
+  }
+  
+  .dashboard__tab.active { /* Style for the selected tab */
+    background-color: #3a86ff; /* Accent 1 color */
+    color: #fff; /* White text */
   }
   
   .dashboard__content { 
-    flex: 1; /* Allow content area to expand */
-    padding: 2rem; /* Add padding around content */
+    flex: 1; 
+    padding: 2rem; 
   }
   
+  /* Styles for the Summary Data Points */
+  .dashboard__summary-data {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 2rem; 
+  }
+  
+  .data-point {
+    text-align: center;
+  }
+  
+  .data-point__label {
+    font-size: 1.5rem; 
+    font-weight: bold;
+  }
+  
+  .data-point__value {
+    font-size: 4rem; 
+    font-weight: bold;
+    color: #3a86ff; 
+  } 
+  
+  .link-account-button {
+    background-color: #3a86ff; /* Accent 1 Color */
+    color: #fff; /* White Text Color */
+    padding: 1rem 2rem; /* Add some padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Adjust font size if needed */
+    cursor: pointer; /* Indicate clickable button */
+    margin-bottom: 1rem; /* Add space below the button *//* Make the button full width */
+  }
+  
+  .link-account-message {
+    color: #999; /* Light gray color */
+    font-size: 0.8rem; /* Smaller font size for message */
+    text-align: center; /* Center align the message */
+  }
