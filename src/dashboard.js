@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './dashboard.css';
+import { initiateLinkAccount } from './LinkAccount.js'; 
 
 function Dashboard() {
   const [selectedTab, setSelectedTab] = useState('Summary'); 
 
   const handleLinkAccountClick = () => {
-    // Placeholder for future API integration
-    console.log('Link account button clicked!'); 
+    return <div>{initiateLinkAccount()}</div>; // Changes here
   }
+
 
   const renderContent = () => {
     switch (selectedTab) {
